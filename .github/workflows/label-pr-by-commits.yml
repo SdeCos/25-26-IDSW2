@@ -20,8 +20,8 @@ jobs:
         with:
           script: |
             // ── Configuración ──────────────────────────────────────
-            const DEADLINE      = new Date('2026-03-04T14:15:00+01:00');
-            const HARD_DEADLINE = new Date('2026-03-04T23:59:59+01:00');
+            const DEADLINE      = new Date('2026-03-05T14:15:00+01:00');
+            const HARD_DEADLINE = new Date('2026-03-05T23:59:59+01:00');
             const REQUIRED_BRANCH = 'reto-002';
             const ALLOWED_PATHS = /^entregas\/[^/]+\/(README\.md|docs\/.+)$/;
             const STUDENT_ROOT  = /^entregas\/([^/]+)\//;
@@ -82,7 +82,7 @@ jobs:
             let deadlineLabel = '';
 
             if (now > HARD_DEADLINE) {
-              errors.push('Entrega posterior al límite absoluto (4 mar 23:59:59 CET).');
+              errors.push('Entrega posterior al límite absoluto (5 mar 23:59:59 CET).');
               deadlineLabel = 'fuera-de-plazo';
             } else if (now > DEADLINE) {
               warnings.push('Entrega fuera de plazo (posterior a 14:15 CET). Se acepta con penalización.');
