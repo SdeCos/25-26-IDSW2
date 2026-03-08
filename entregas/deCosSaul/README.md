@@ -1,1 +1,1 @@
-# [Reto 002 Saúl de Cos Sánchez](docs/legibilidad.md)
+# [Reto 002 - Legibilidad - Saúl de Cos Sánchez](docs/legibilidad.md)
